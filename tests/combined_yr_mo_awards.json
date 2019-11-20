@@ -1,0 +1,53 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "imc_key_no",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "mo_yr_key_no",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "cntry_key_no",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "perf_yr",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "i_mthly_awd_cd",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "i_yrly_awd_cd",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "i_mthly_awd_rnk_no",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "i_yrly_awd_rnk_no",
+            "nullable": true,
+            "type": "integer"
+        }
+    ],
+    "type": "struct"
+}

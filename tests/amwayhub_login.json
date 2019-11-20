@@ -1,0 +1,23 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "mo_yr_key_no",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "imc_no",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_num_amwayhub_login",
+            "nullable": true,
+            "type": "integer"
+        }
+    ],
+    "type": "struct"
+}

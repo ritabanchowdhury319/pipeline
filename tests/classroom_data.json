@@ -1,0 +1,167 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "imc_no",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "mo_yr_key_no",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "num_download",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_download_sum_3m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_download_sum_6m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_download_sum_9m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_download_sum_12m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "num_browse",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_browse_sum_3m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_browse_sum_6m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_browse_sum_9m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_browse_sum_12m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "num_share",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_share_sum_3m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_share_sum_6m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_share_sum_9m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_share_sum_12m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "num_search",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_search_sum_3m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_search_sum_6m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_search_sum_9m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_search_sum_12m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "num_fav",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_fav_sum_3m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_fav_sum_6m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_fav_sum_9m",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_lag_currentyr_fav_sum_12m",
+            "nullable": true,
+            "type": "long"
+        }
+    ],
+    "type": "struct"
+}

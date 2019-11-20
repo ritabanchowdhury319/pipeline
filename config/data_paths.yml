@@ -1,0 +1,476 @@
+########################
+# raw input data received
+########################
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+raw_behaviors_data: s3n://bcgds-preprod/gdwdataextracts/behaviors/Behaviors_{year}.csv
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+behavior_additions_data: s3n://bcgds-preprod/gdwdataextracts/behaviors_additions/Behaviors_Additions_*.csv.gz
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+behavior_additions_data_June2019: s3n://bcgds-preprod/gdwdataextracts/behaviors/Behaviors_201906.csv.gz
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+behavior_additions_data_July2019: s3n://bcgds-preprod/gdwdataextracts/behaviors/Behaviors_201907.csv.gz
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+behavior_additions_data_August2019: s3n://bcgds-preprod/gdwdataextracts/behaviors/Behaviors_201908.csv.gz
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+behavior_additions_data_September2019: s3n://bcgds-preprod/gdwdataextracts/behaviors/Behaviors_201909.csv.gz
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+province_names_mapping_input: s3n://bcgds-preprod/gdwdataextracts/external_data/china_province_english_mapping/*
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+disposable_income_data_input: s3n://bcgds-preprod/gdwdataextracts/external_data/Per_Capita_Disposable_Income/Per_Capita_Disposable_Income_Flat_v2.csv
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py
+china_promo_imc_order_data: s3n://bcgds-preprod/gdwdataextracts/china_promo_imc_order/china_promo_imc_order.csv
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py
+support_promotion_campaigns: s3n://bcgds-preprod/gdwdataextracts/external_data/support_promotion_campaigns
+
+###
+# Used in local_model_pipeline
+china_awards_by_perf_yr: s3n://bcgds-preprod/gdwdataextracts/external_data/china_awards_by_perf_yr
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_ABO_DNA.py, pipeline/tasks/layer2/task_Layer2_renewal_model.py
+per_capita_disposable_income: s3n://bcgds-preprod/gdwdataextracts/external_data/per_capita_disposable_income_v3
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py
+denormalized_awards: s3://bcgds-preprod/gdwdataextracts/denormalized_awards/Denormalized_Awards.csv.gz
+
+###
+# pipeline/config/layer1.yml
+china_award_no: s3://bcgds-preprod/gdwdataextracts/denormalized_awards/China_award_no.csv
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py
+amwayhub_login_input: s3://bcgds-preprod/gdwdataextracts/amwayhub_data/*.csv
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+classroom_download_history: s3n://bcgds-preprod/gdwdataextracts/amway_classroom_data/classroom_download_history.csv
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+classroom_browse_history: s3n://bcgds-preprod/gdwdataextracts/amway_classroom_data/classroom_browse_history.csv
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+classroom_sharing_history: s3n://bcgds-preprod/gdwdataextracts/amway_classroom_data/classroom_sharing_history.csv
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+classroom_search_history: s3n://bcgds-preprod/gdwdataextracts/amway_classroom_data/classroom_search_history.csv
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+classroom_saved_to_fav_history: s3n://bcgds-preprod/gdwdataextracts/amway_classroom_data/classroom_saved_to_fav_history.csv
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+wechat_miniprogram_input: s3n://bcgds-preprod/gdwdataextracts/wechat_miniprogram/*.txt
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+gar_pf_input: s3n://bcgds-preprod/gdwdataextracts/gar_pf/*.csv
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py
+pin_award_mapping: s3n://bcgds-preprod/gdwdataextracts/awd_refer_table/pin_award_mapping.csv
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+fc_dist_df: s3n://bcgds-preprod/gdwdataextracts/fc_dist/导出.csv
+
+
+########################################################
+# intemediate or final output from the pipeline
+########################################################
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py pipeline/tasks/layer1/task_Layer1.py pipeline/tests/pytest_layer0.py
+behaviors_combined_data_full: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/behaviors_combined_data_full
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+province_names_mapping: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/province_names_mapping
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py
+disposable_income_data: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/disposable_income_data
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_renewal_model.py
+tbl_year1_abo_pc_renewal: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/tbl_year1_abo_pc_renewal
+
+#pipeline/tasks/layer0/task_Layer0.py pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_migration_model.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+behaviors_combined_data: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/behaviors_combined_data
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_renewal_model.py
+china_promo_imc_order: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/china_promo_imc_order
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+performance_year: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/performance_year
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+support_promotions: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/support_promotions
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+support_first_indicators: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/support_first_indicators
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py
+support_repeat_customers_vw: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/support_repeat_customers_vw
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+support_los_plat: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/support_los_plat
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+support_los_emerald: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/support_los_emerald
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+support_los_silver: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/support_los_silver
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+support_los_gold: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/support_los_gold
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+support_los_diamond: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/support_los_diamond
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+abo_dna_downline_indiv_vw: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/abo_dna_downline_indiv_vw
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+percentile_rank: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/percentile_rank
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+average_rank: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/average_rank
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+average_rank_region: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/average_rank_region
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+average_rank_awd_rnk: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/average_rank_awd_rnk
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_ABO_DNA.py
+abo_id_group_df: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/average_rank_awd_rnk_{part_num}
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_ABO_DNA.py
+behaviors_combined_data_group: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/behaviors_combined_data_group_{part_num}
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_ABO_DNA.py
+abo_dna_partial: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/abo_dna_partial_{part_num}
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_migration_model.py pipeline/tasks/layer2/task_Layer2_renewal_model.py pipeline/tasks/layer3/task_Layer3_migration_model.py
+abo_dna_sample: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/abo_dna_sample
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_migration_model.py pipeline/tasks/layer2/task_Layer2_renewal_model.py pipeline/tasks/layer3/task_Layer3_migration_model.py
+abo_dna_full_file: s3://bcgds-preprod/pipeline/{run_mode}/{run_id}/abo_dna_full_file/ 
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py
+bns_migration_6m_outcomes: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/bns_migration_6m_outcomes 
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py
+bns_migration_3m_outcomes: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/bns_migration_3m_outcomes
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+amwayhub_login: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/amwayhub_login
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+download_df: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/download_df
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+browse_df: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/browse_df
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+share_df: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/share_df
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+search_df: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/search_df
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+fav_df: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/fav_df
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+classroom_data: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/classroom_data
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+combined_yr_mo_awards: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/combined_yr_mo_awards
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+wechat_cloudcommerce: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/wechat_cloudcommerce
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+gar_pf: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/gar_pf
+
+###
+# Used in pipeline/tasks/layer1/task_Layer1.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+gar_pf_cleaned: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/gar_pf_cleaned
+
+###
+# Used in pipeline/tasks/layer0/task_Layer0.py pipeline/tasks/layer2/task_Layer2_ABO_DNA.py pipeline/tasks/layer2/task_Layer2_renewal_model.py
+fc_dist_cleaned: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/fc_dist_cleaned
+
+################################
+# renewal output path
+################################
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_renewal_model.py
+yr1_renewal_v1: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yr1_renewal_v1
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_renewal_model.py pipeline/tasks/layer3/task_Layer3_renewal_model.py
+yr1_renewal_train_raw: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yr1_renewal_train_raw
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_renewal_model.py pipeline/tasks/layer3/task_Layer3_renewal_model.py
+yr1_renewal_scoring_raw: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yr1_renewal_scoring_raw
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_renewal_model.py
+md_prediction_1_firstyr_renewal: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/md_prediction_1_firstyr_renewal
+
+
+################################
+# migration output path
+################################ 
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py
+bns_migration_model_max_bns_3m_zero: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/bns_migration_model_max_bns_3m_zero 
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py pipeline/tasks/layer3/task_Layer3_migration_model.py
+bns_migration_model_max_bns_3m_positive: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/bns_migration_model_max_bns_3m_positive 
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py
+bns_migration_model_max_bns_3m_zero_sample_csv: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/bns_migration_model_max_bns_3m_zero_sample.csv 
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py
+bns_migration_model_max_bns_3m_positive_sample_csv: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/bns_migration_model_max_bns_3m_positive_sample.csv 
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py
+bns_migration_model_max_bns_6m_zero: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/bns_migration_model_max_bns_6m_zero 
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py pipeline/tasks/layer3/task_Layer3_migration_model.py
+bns_migration_model_max_bns_6m_positive: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/bns_migration_model_max_bns_6m_positive 
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py
+bns_migration_model_max_bns_6m_zero_sample_csv: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/bns_migration_model_max_bns_6m_zero_sample.csv 
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py 
+bns_migration_model_max_bns_6m_positive_sample_csv: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/bns_migration_model_max_bns_6m_positive_sample.csv
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py
+yrly_label_tbl: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yrly_label_tbl
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_migration_model.py
+yrly_migration_final: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yrly_migration_final
+yrly_migration_final: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yrly_migration_final
+yrly_migration_final_csv: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yrly_migration_final_csv
+yrly_migration_final_aug_old_df: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yrly_migration_final_aug_old
+yrly_migration_final_aug: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yrly_migration_final_aug
+yrly_migration_final_aug_csv: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yrly_migration_final_aug_csv
+yrly_migration_final_nov: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yrly_migration_final_nov
+yrly_migration_final_nov_csv: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yrly_migration_final_nov_csv
+yrly_migration_final_feb: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yrly_migration_final_feb
+yrly_migration_final_feb_csv: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/yrly_migration_final_feb_csv
+
+################################
+# migration model paths
+################################
+ 
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_3m_model: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_3m_model 
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_3m_model_CrossValidatorModel: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_3m_model_CrossValidatorModel
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_3m_scored_data: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_3m_scored_data 
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_3m_train_data: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_3m_train_data 
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_3m_test_data: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_3m_test_data 
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_3m_feature_list: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_3m_feature_list
+
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_onehot_model: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_onehot_model
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+trained_local_model_path: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/trained_local_model
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+local_model_sample_X: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/local_model_sample_X
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+local_model_sample_y: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/local_model_sample_y
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py pipeline/tasks/layer3/task_Layer3_renewal_model.py
+scoring_data_shapley_values: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/scoring_data_shapley_values 
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_6m_model: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_6m_model 
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_6m_model_CrossValidatorModel: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_6m_model_CrossValidatorModel 
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_6m_scored_data: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_6m_scored_data 
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_6m_train_data: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_6m_train_data 
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_6m_test_data: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_6m_test_data 
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_6m_feature_list: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_6m_feature_list
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_migration_model.py
+migration_model_performance_metrics: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/migration_model_performance_metrics
+saved_model_path_CrossValidatorModel: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/saved_model_path_CrossValidatorModel
+saved_model_path: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/saved_model_path
+train_data_path: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/train_data_path
+test_data_path: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/test_data_path
+feature_list_path: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/feature_list_path
+
+
+################################
+# renew model paths
+################################
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_renewal_model.py pipeline/tasks/layer3/task_Layer3_renewal_model.py
+renewal_train: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/renewal_train
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_renewal_model.py
+renewal_test: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/renewal_test
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_renewal_model.py
+renewal_string_indexer: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/renewal_string_indexers/renewal_string_indexer_{i:05d}
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_renewal_model.py
+renewal_feature_config: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/configs/feature_config.yml
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_renewal_model.py
+renewal_model: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/renewal_model
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_renewal_model.py
+renewal_model_CrossValidatorModel: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/renewal_model_CrossValidatorModel
+    
+###
+# Used in pipeline/tasks/layer3/task_Layer3_renewal_model.py
+renewal_score: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/renewal_score
+
+###
+# Used in pipeline/tasks/layer2/task_Layer2_renewal_model.py pipeline/tasks/layer3/task_Layer3_renewal_model.py
+renewal_scoring_output: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/renewal_scoring_output
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_renewal_model.py
+renewal_model_local: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/renewal_model_local
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_renewal_model.py
+renewal_scoring_data_shapley_values: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/renewal_scoring_data_shapley_values
+
+###
+# Used in pipeline/tasks/layer3/task_Layer3_renewal_model.py
+renewal_model_performance_metrics: s3n://bcgds-preprod/pipeline/{run_mode}/{run_id}/renewal_model_performance_metrics
+
+
+################################
+#dashboard sample output/input
+################################
+
+# Used in local_model_pipeline
+zero_bns_predictions: s3n://bcgds-preprod/model/SCORING/combined_scoring/predictions_monthly_migration/201909_zero_bns_predictions.csv
+
+# Used in local_model_pipeline
+positive_bns_predictions: s3n://bcgds-preprod/model/SCORING/combined_scoring/predictions_monthly_migration/201909_positive_bns_predictions.csv

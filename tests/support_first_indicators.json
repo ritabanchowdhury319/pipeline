@@ -1,0 +1,95 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "imc_key_no",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "mo_yr_key_no",
+            "nullable": true,
+            "type": "date"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_order",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_silver",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_gold",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_dd",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_3pctbns",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_6pctbns",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_9pctbns",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_12pctbns",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_15pctbns",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_18pctbns",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_21pctbns",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_SR",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_first_AA",
+            "nullable": false,
+            "type": "integer"
+        }
+    ],
+    "type": "struct"
+}

@@ -1,0 +1,29 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "imc_no",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "i_perf_yr",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "gar_rank_no",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "gar_rank_desc",
+            "nullable": true,
+            "type": "string"
+        }
+    ],
+    "type": "struct"
+}

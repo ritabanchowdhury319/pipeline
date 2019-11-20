@@ -1,0 +1,227 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "mo_yr_key_no",
+            "nullable": true,
+            "type": "date"
+        },
+        {
+            "metadata": {},
+            "name": "cur_plat_imc_no",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_head_exists",
+            "nullable": false,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_ABOs",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_ABOs_AA",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_ABOs_SR",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_ABOs_engaged",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_customers",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_customers_avg_3m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_customers_avg_6m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_customers_avg_9m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_customers_avg_12m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_customers_repeat",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_customers_repeat_avg_3m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_customers_repeat_avg_6m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_customers_repeat_avg_9m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_customers_repeat_avg_12m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_q_mth",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_q_mth_avg_3m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_q_mth_avg_6m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_q_mth_avg_9m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_q_mth_avg_12m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_qv_mth",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_q1_mth",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_q2_mth",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_leaves",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_LOS_plat_pv_per_member",
+            "nullable": false,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_head_frontln_ABOs",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_head_frontln_customers",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_head_frontln_q_mth",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_head_frontln_q_mth_avg_3m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_head_frontln_q_mth_avg_6m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_head_frontln_q_mth_avg_9m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_head_frontln_q_mth_avg_12m",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_head_frontln_qv_mth",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_head_frontln_q1_mth",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_los_plat_head_frontln_q2_mth",
+            "nullable": true,
+            "type": "long"
+        }
+    ],
+    "type": "struct"
+}

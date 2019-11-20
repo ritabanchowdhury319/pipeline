@@ -1,0 +1,23 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "ord_imc_key_no",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "mo_yr_key_no",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "n_promo_sku_purchased",
+            "nullable": false,
+            "type": "long"
+        }
+    ],
+    "type": "struct"
+}

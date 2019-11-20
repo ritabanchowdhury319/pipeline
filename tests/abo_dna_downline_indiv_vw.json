@@ -1,0 +1,149 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "imc_key_no",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "mo_yr_key_no",
+            "nullable": true,
+            "type": "date"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_all",
+            "nullable": false,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_ABOs",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_customers",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_customers_repeat",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_prsnl_pv_sum",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_customer_prsnl_pv_sum",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_ABO_prsnl_pv_sum",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_group_pv_sum",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_dmd_ord_sum",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_dmd_ord_nonzero",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_sponsor",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_awd_achieved",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_310_awd",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_320_awd",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "i_downline_awd_max",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_frontln_ABO_sum",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_frontln_customer_sum",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_9plus_bns_pct_mth",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_q_mth",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_qv_mth",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_q1_mth",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "n_downline_q2_mth",
+            "nullable": true,
+            "type": "long"
+        }
+    ],
+    "type": "struct"
+}

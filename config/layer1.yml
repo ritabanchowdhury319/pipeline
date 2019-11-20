@@ -1,0 +1,53 @@
+###
+# If use_sample is true in run.yml then the fraction to sample of behaviors data.
+sampling_fraction: 0.1
+
+###
+# The seed used if and when sampling the data
+sampling_seed: 12345
+
+###
+# Specify the parameters used in "create_monthly_yearly_award"
+cntry_award_no: "china_award_no"
+cntry: "china"
+de_awd_col_names: ['CNTRY_KEY_NO', 'IMC_KEY_NO', 'MO_YR_KEY_NO', 'SILVER_FLG', 'SILVER_HOW_QUAL', 'SILVER_NEW_QUAL_FLG', 'GOLD_FLG', 'GOLD_HOW_QUAL',
+                   'GOLD_NEW_QUAL_FLG', 'PLAT_FLG', 'PLAT_HOW_QUAL', 'PLAT_NEW_QUAL_FLG', 'RUBY_FLG', 'RUBY_NEW_QUAL_FLG', 'F_PLAT_FLG', 'F_PLAT_NEW_QUAL_FLG', 'PEARL_FLG',
+                   'PEARL_NEW_QUAL_FLG', 'SAPPHIRE_FLG', 'SAPPHIRE_NEW_QUAL_FLG', 'F_SAPPHIRE_FLG', 'F_SAPPHIRE_NEW_QUAL_FLG', 'EMRLD_FLG', 'EMRLD_NEW_QUAL_FLG', 'F_EMRLD_FLG',
+                   'F_EMRLD_NEW_QUAL_FLG', 'DIA_FLG', 'DIA_NEW_QUAL_FLG', 'F_DIA_FLG', 'F_DIA_NEW_QUAL_FLG', 'EXEC_DIA_FLG',
+                   'EXEC_DIA_NEW_QUAL_FLG', 'F_EXEC_DIA_FLG', 'F_EXEC_DIA_NEW_QUAL_FLG', 'DOUBLE_DIA_FLG', 'DOUBLE_DIA_NEW_QUAL_FLG', 'F_DOUBLE_DIA_FLG', 'F_DOUBLE_DIA_NEW_QUAL_FLG',
+                   'TRIPLE_DIA_FLG', 'TRIPLE_DIA_NEW_QUAL_FLG', 'F_TRIPLE_DIA_FLG', 'F_TRIPLE_DIA_NEW_QUAL_FLG', 'CROWN_PLUS_FLG', 'CROWN_PLUS_NEW_QUAL_FLG']
+first_month_of_perf_yr: 9
+rnk_scores:
+  CROWN_PLUS_FLG: 420
+  F_TRIPLE_DIA_FLG: 415
+  TRIPLE_DIA_FLG: 410
+  F_DOUBLE_DIA_FLG: 405
+  DOUBLE_DIA_FLG: 400
+  F_EXEC_DIA_FLG: 395
+  EXEC_DIA_FLG: 390
+  F_DIA_FLG: 385
+  DIA_FLG: 380
+  F_EMRLD_FLG: 375
+  EMRLD_FLG: 370
+  F_SAPPHIRE_FLG: 367
+  SAPPHIRE_FLG: 365
+  PEARL_FLG: 350
+  F_PLAT_FLG: 342
+  RUBY_FLG: 340
+  PLAT_FLG: 330
+  GOLD_FLG: 320
+  SILVER_FLG: 310
+
+
+###
+# Specify the parameters used in "create_cntry_promo_imc_order"
+cntry_promo_imc_order_data: "china_promo_imc_order_data"
+cntry_promo_imc_order: china_promo_imc_order
+
+###
+# Specify the parameters used in "wechat_cloudcommerce"
+lag_features: [3, 6, 9, 12]
+
+###
+# Specify the parameters used in "gar_pf_data_cleansing"
+gar_data_regions: ["CHINA", "360"]

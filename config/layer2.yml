@@ -1,0 +1,30 @@
+maxRecordsPerFile: 10000
+
+# Configs only used in "task_layer2_ABO_DNA"
+num_parts: 10
+seed: 99
+columns_used: ['imc_no','reg_shop_prvnc_nm','APP_1_AGE','APP_1_GNDR_CD','BL_BEAUTY_bv_LC_AMT','BL_BEAUTY_PV_FLG','BL_BEAUTY_PV_LC_AMT','BL_BEAUTY_REV_LC_AMT','BL_DURABLES_bv_LC_AMT','BL_DURABLES_PV_FLG','BL_DURABLES_PV_LC_AMT','BL_DURABLES_REV_LC_AMT','BL_HOMECARE_bv_LC_AMT','BL_HOMECARE_PV_FLG','BL_homecare_PV_LC_AMT','BL_HOMECARE_REV_LC_AMT','BL_NUTRITION_bv_LC_AMT','BL_NUTRITION_PV_FLG','BL_NUTRITION_PV_LC_AMT','BL_NUTRITION_REV_LC_AMT','BL_OTHER_bv_LC_AMT','BL_OTHER_PV_FLG','BL_OTHER_PV_LC_AMT','BL_OTHER_REV_LC_AMT','BL_PERSCARE_bv_LC_AMT','BL_PERSCARE_PV_FLG','BL_PERSCARE_PV_LC_AMT','BL_PERSCARE_REV_LC_AMT','bns_dif_comm_curr_amt','bns_grs_pln_comm_curr_amt','BNS_PCT','bns_pers_comm_curr_amt','cntry_key_no','cur_awd_awd_rnk_no','cur_dia_imc_no','cur_emd_imc_no','cur_gld_imc_no','cur_plat_imc_no','cur_sil_imc_no','dmd_ord_cnt','frontln_distb_cnt','globl_bus_stat_cd','globl_imc_type_cd','GSC_MOB_BV_LC_AMT','GSC_MOB_PV_LC_AMT','GSC_MOB_REV_LC_AMT','GSC_OTHR_BV_LC_AMT','GSC_OTHR_PV_LC_AMT','GSC_OTHR_REV_LC_AMT','GSC_RCUR_PV_FLG','GSC_RCUR_PV_LC_AMT','GSC_TEL_BV_LC_AMT','GSC_TEL_PV_LC_AMT','GSC_TEL_REV_LC_AMT','GSC_WALK_BV_LC_AMT','GSC_WALK_PV_LC_AMT','GSC_WALK_REV_LC_AMT','GSC_WEB_BV_LC_AMT','GSC_WEB_PV_LC_AMT','GSC_WEB_REV_LC_AMT','imc_group_bv','imc_group_pv','imc_key_no','imc_months_after_signup','imc_prsnl_bv','imc_prsnl_pv','imc_qual_legs_qty','IMC_RENEW_FLG','IMC_SLVR_PROD_MO_FLG','IMC_SLVR_PROD_Q1_MO_FLG','IMC_SLVR_PROD_Q2_MO_FLG','IMC_SLVR_PROD_QV_MO_FLG','imc_spon_flg','imc_total_dwnln_pv','LAST_3DAY_ORD_CNT','LAST_3DAY_PV_LC_AMT','LAST_3DAY_rev_lc_AMT','local_imc_type_desc','mo_yr_key_no','REV_LC_AMT','seg_alt_desc','spon_imc_key_no','STLY_PV_LC_AMT','STLY_REV_LC_AMT', 'PV_LC_AMT', 'I_REG_CITY_SEG_CD', 'I_REG_SHOP_CD', 'I_REG_SHOP_RGN_CD', 'I_IMC_EARN_BNS_FLG', 'I_TENURE_YEAR']
+up_cols: ['cur_awd_awd_rnk_no','imc_months_after_signup','imc_key_no','mo_yr_key_no']
+cntry_promo_imc_order: "china_promo_imc_order"
+lag_column_3m: ["n_imc_prsnl_pv_sum_3m","n_imc_prsnl_bv_sum_3m","n_rev_lc_amt_sum_3m","n_bns_pct_MAX_3m","n_bns_9plus_sum_3m","n_bns_flg_count_3m","n_bns_grs_pln_comm_curr_amt_sum_3m","n_bns_pers_comm_curr_amt_sum_3m","n_bns_dif_comm_curr_amt_sum_3m","n_dmd_ord_cnt_sum_3m","n_dmd_ord_cnt_nonzero_mths_3m","n_BL_BEAUTY_pv_lc_amt_sum_3m","n_BL_DURABLES_pv_lc_amt_sum_3m","n_BL_HOMECARE_pv_lc_amt_sum_3m","n_BL_NUTRITION_pv_lc_amt_sum_3m","n_BL_PERSCARE_pv_lc_amt_sum_3m","n_BL_OTHER_pv_lc_amt_sum_3m","n_gsc_web_pv_lc_amt_sum_3m","n_gsc_walk_pv_lc_amt_sum_3m","n_gsc_TEL_pv_lc_amt_sum_3m","n_gsc_MOB_pv_lc_amt_sum_3m","n_gsc_OTHR_pv_lc_amt_sum_3m","n_gsc_web_BV_lc_amt_sum_3m","n_gsc_walk_BV_lc_amt_sum_3m","n_gsc_TEL_BV_lc_amt_sum_3m","n_gsc_MOB_BV_lc_amt_sum_3m","n_gsc_OTHR_BV_lc_amt_sum_3m","n_q_mth_sum_3m","n_imc_sponsor_sum_3m","n_abos_added_past_3m","n_lag_download_classrm_sum_3m","n_lag_browse_classrm_sum_3m","n_lag_share_classrm_sum_3m","n_lag_search_classrm_sum_3m","n_lag_fav_classrm_sum_3m"]
+lag_column_6m: ["n_imc_prsnl_pv_sum_6m","n_imc_prsnl_bv_sum_6m","n_rev_lc_amt_sum_6m","n_bns_pct_MAX_6m","n_bns_9plus_sum_6m","n_bns_flg_count_6m","n_bns_grs_pln_comm_curr_amt_sum_6m","n_bns_pers_comm_curr_amt_sum_6m","n_bns_dif_comm_curr_amt_sum_6m","n_dmd_ord_cnt_sum_6m","n_dmd_ord_cnt_nonzero_mths_6m","n_BL_BEAUTY_pv_lc_amt_sum_6m","n_BL_DURABLES_pv_lc_amt_sum_6m","n_BL_HOMECARE_pv_lc_amt_sum_6m","n_BL_NUTRITION_pv_lc_amt_sum_6m","n_BL_PERSCARE_pv_lc_amt_sum_6m","n_BL_OTHER_pv_lc_amt_sum_6m","n_gsc_web_pv_lc_amt_sum_6m","n_gsc_walk_pv_lc_amt_sum_6m","n_gsc_TEL_pv_lc_amt_sum_6m","n_gsc_MOB_pv_lc_amt_sum_6m","n_gsc_OTHR_pv_lc_amt_sum_6m","n_gsc_web_BV_lc_amt_sum_6m","n_gsc_walk_BV_lc_amt_sum_6m","n_gsc_TEL_BV_lc_amt_sum_6m","n_gsc_MOB_BV_lc_amt_sum_6m","n_gsc_OTHR_BV_lc_amt_sum_6m","n_q_mth_sum_6m","n_imc_sponsor_sum_6m","n_abos_added_past_6m","n_lag_download_classrm_sum_6m","n_lag_browse_classrm_sum_6m","n_lag_share_classrm_sum_6m","n_lag_search_classrm_sum_6m","n_lag_fav_classrm_sum_6m"]
+lag_column_12m: ["n_imc_prsnl_pv_sum_12m","n_imc_prsnl_bv_sum_12m","n_rev_lc_amt_sum_12m","n_bns_pct_MAX_12m","n_bns_9plus_sum_12m","n_bns_flg_count_12m","n_bns_grs_pln_comm_curr_amt_sum_12m","n_bns_pers_comm_curr_amt_sum_12m","n_bns_dif_comm_curr_amt_sum_12m","n_dmd_ord_cnt_sum_12m","n_dmd_ord_cnt_nonzero_mths_12m","n_BL_BEAUTY_pv_lc_amt_sum_12m","n_BL_DURABLES_pv_lc_amt_sum_12m","n_BL_HOMECARE_pv_lc_amt_sum_12m","n_BL_NUTRITION_pv_lc_amt_sum_12m","n_BL_PERSCARE_pv_lc_amt_sum_12m","n_BL_OTHER_pv_lc_amt_sum_12m","n_gsc_web_pv_lc_amt_sum_12m","n_gsc_walk_pv_lc_amt_sum_12m","n_gsc_TEL_pv_lc_amt_sum_12m","n_gsc_MOB_pv_lc_amt_sum_12m","n_gsc_OTHR_pv_lc_amt_sum_12m","n_gsc_web_BV_lc_amt_sum_12m","n_gsc_walk_BV_lc_amt_sum_12m","n_gsc_TEL_BV_lc_amt_sum_12m","n_gsc_MOB_BV_lc_amt_sum_12m","n_gsc_OTHR_BV_lc_amt_sum_12m","n_q_mth_sum_12m","n_imc_sponsor_sum_12m","n_abos_added_past_12m","n_lag_download_classrm_sum_12m","n_lag_browse_classrm_sum_12m","n_lag_share_classrm_sum_12m","n_lag_search_classrm_sum_12m","n_lag_fav_classrm_sum_12m"]
+
+
+# Configs only used in "task_layer2_renewal_model"
+n_imc_months_after_signup: 2
+month_regeneration: [2,3,4,5,6,7,8,9,10,11,12,13,14,15,1]
+scoring_data_date_cutoff: 2018-06-01
+
+
+# Configs only used in "task_layer2_migration_model"
+target_3m: True
+sampling_fraction: 1.0
+sampling_seed: 12345
+aug_label: True
+nov_label: True
+feb_label: True
+outputCSV: True
+if_mix_rank: True
+if_dedup: True
+

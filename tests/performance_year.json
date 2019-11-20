@@ -1,0 +1,17 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "mo_yr_key_no",
+            "nullable": true,
+            "type": "date"
+        },
+        {
+            "metadata": {},
+            "name": "perf_yr",
+            "nullable": false,
+            "type": "integer"
+        }
+    ],
+    "type": "struct"
+}

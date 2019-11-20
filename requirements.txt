@@ -1,0 +1,13 @@
+sqlalchemy
+pandas
+psycopg2-binary == 2.8.3
+spark-df-profiling
+pyspark
+boto3
+xgboost
+sklearn
+seaborn
+matplotlib
+numpy
+pandas_profiling
+shap

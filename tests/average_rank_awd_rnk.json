@@ -1,0 +1,47 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "mo_yr_key_no",
+            "nullable": true,
+            "type": "date"
+        },
+        {
+            "metadata": {},
+            "name": "cur_awd_awd_rnk_no",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "awd_rnk_average_grs_bns",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "awd_rnk_average_prsnl_pv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "awd_rnk_average_group_pv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "awd_rnk_average_prsnl_bv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "awd_rnk_average_group_bv",
+            "nullable": true,
+            "type": "double"
+        }
+    ],
+    "type": "struct"
+}

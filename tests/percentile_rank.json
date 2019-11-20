@@ -1,0 +1,107 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "imc_key_no",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "mo_yr_key_no",
+            "nullable": true,
+            "type": "date"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_overall_grs_bns",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_overall_prsnl_pv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_overall_prsnl_bv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_overall_group_pv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_overall_group_bv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_region_grs_bns",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_region_prsnl_pv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_region_prsnl_bv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_region_group_pv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_region_group_bv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_awd_rnk_grs_bns",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_awd_rnk_prsnl_pv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_awd_rnk_prsnl_bv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_awd_rnk_group_pv",
+            "nullable": true,
+            "type": "double"
+        },
+        {
+            "metadata": {},
+            "name": "n_percentile_awd_rnk_group_bv",
+            "nullable": true,
+            "type": "double"
+        }
+    ],
+    "type": "struct"
+}

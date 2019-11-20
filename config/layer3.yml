@@ -1,0 +1,121 @@
+# renewal model
+renewal:
+  train_filter_flag: True
+  train_filter_condition: 'n_signup_year = 2017 or (n_signup_year = 2018 and n_signup_month < 8)'
+  train_sampling_flag: False
+  train_sampling_fraction: 0.01
+  features_to_exclude: [] # Columns to exclude
+  primary_key_columns: ['imc_key_no', 'imc_no', 'mo_yr_key_no', 'spon_imc_key_no']
+  fillna_non_categorical_value: 0
+  fillna_categorical_value: 'unknown_filled'
+  train_test_split_flag: True
+  train_test_split_ratio: [0.8, 0.2]
+  train_test_split_col: imc_no
+  target_variable: i_year1_renewal_flag
+  seed: 1000
+  maxDepth: 5
+  maxBins: 48
+  maxIter: 20
+  stepSize: 0.1
+  maxMemoryInMB: 256
+  cacheNodeIds: True
+  subsamplingRate: 1.0
+  featureSubsetStrategy: all
+  score_filter_flag: False
+  score_filter_condition: ''
+  score_sampling_flag: False
+  score_sampling_fraction: 0.01
+  probability_threshhold: 0.38
+  s3_bucket: bcgds
+  local_model_sample_size: 300000
+  cv_folds: 5
+  grid_search_maxDepth: [2, 4, 6]
+  grid_search_maxBins: [40, 50]
+  grid_search_maxIter: [10, 15]
+  local_model_num_trees: 10
+
+# migration model
+bonus_migration:
+  model_type_6m:
+    sampling_flag: False
+    sampling_fraction: 0.1
+    remove_lyr_features_flag: True
+    features_to_exclude: ['i_perf_yr', 'future_3m_max_bns', 'future_6m_max_bns', 'i_awd_rnk', 'i_awd_rnk_previous', 'bns_migration_label_3m'] # Columns to exclude
+    primary_key_columns: ['imc_key_no', 'imc_no', 'mo_yr_key_no']
+    string_columns: ['i_globl_imc_type_cd', 'i_globl_bus_stat_cd', 'i_local_imc_type_desc', 'i_app_1_gender', 'i_seg_alt_desc', 'i_region', 'i_top_1_channel', 'i_mthly_awd_cd', 'i_yrly_awd_cd']
+    ensure_numeric_columns: ['max_bns_6m', 'future_6m_max_bns', 'max_bns_3m', 'future_3m_max_bns']
+    fillna_non_categorical_value: 0
+    fillna_string_value: 'unknown_filled'
+    train_test_split: [0.8, 0.2]
+    train_test_split_col: imc_no
+    target_variable: bns_migration_label_6m
+    target_variable_values: ['SAME','UP','DOWN']
+    seed: 1000
+    low_var_threshold: .1
+    extreme_recode_threshold: .95
+    binary_or_multiclass: binary
+    scoring_filter_date: 20190701    # scoring data >= date below
+    scoring_filter_column: mo_yr_key_no
+    raw_train_data_path: bns_migration_model_max_bns_6m_positive
+    saved_model_path: migration_6m_model
+    saved_model_path_CrossValidatorModel: migration_6m_model_CrossValidatorModel
+    train_data_path: migration_6m_train_data
+    test_data_path: migration_6m_test_data
+    feature_list_path: migration_6m_feature_list
+    scored_data_path: migration_6m_scored_data
+    maxDepth: 5
+    maxBins: 48
+    maxIter: 20
+    stepSize: 0.1
+    maxMemoryInMB: 256
+    cacheNodeIds: True
+    subsamplingRate: 1.0
+    featureSubsetStrategy: all
+    local_model_sample_size: 300000
+    cv_folds: 5
+    grid_search_maxDepth: [2, 4, 6]
+    grid_search_maxBins: [40, 50]
+    grid_search_maxIter: [10, 15]
+    num_trees: 10
+  model_type_3m:
+    sampling_flag: False
+    sampling_fraction: 0.1
+    remove_lyr_features_flag: True
+    features_to_exclude: ['i_perf_yr', 'future_3m_max_bns', 'future_6m_max_bns', 'i_awd_rnk', 'i_awd_rnk_previous', 'bns_migration_label_6m'] # Columns to exclude
+    primary_key_columns: ['imc_key_no', 'imc_no', 'mo_yr_key_no']
+    string_columns: ['i_globl_imc_type_cd', 'i_globl_bus_stat_cd', 'i_local_imc_type_desc', 'i_app_1_gender', 'i_seg_alt_desc', 'i_region', 'i_top_1_channel', 'i_mthly_awd_cd', 'i_yrly_awd_cd']
+    ensure_numeric_columns: ['max_bns_6m', 'future_6m_max_bns', 'max_bns_3m', 'future_3m_max_bns']
+    fillna_non_categorical_value: 0
+    fillna_string_value: 'unknown_filled'
+    train_test_split: [0.8, 0.2]
+    train_test_split_col: imc_no
+    target_variable: bns_migration_label_3m
+    target_variable_values: ['SAME','UP','DOWN']
+    seed: 1000
+    low_var_threshold: .1
+    extreme_recode_threshold: .95
+    binary_or_multiclass: binary
+    scoring_filter_date: 20190701   # scoring data >= date below
+    scoring_filter_column: mo_yr_key_no
+    raw_train_data_path: bns_migration_model_max_bns_3m_positive
+    saved_model_path: migration_3m_model
+    saved_model_path_CrossValidatorModel: migration_3m_model_CrossValidatorModel
+    train_data_path: migration_3m_train_data
+    test_data_path: migration_3m_test_data
+    feature_list_path: migration_3m_feature_list
+    scored_data_path: migration_3m_scored_data
+    maxDepth: 5
+    maxBins: 48
+    maxIter: 20
+    stepSize: 0.1
+    maxMemoryInMB: 256
+    cacheNodeIds: True
+    subsamplingRate: 1.0
+    featureSubsetStrategy: all
+    local_model_sample_size: 300000
+    cv_folds: 5
+    grid_search_maxDepth: [2, 4, 6]
+    grid_search_maxBins: [40, 50]
+    grid_search_maxIter: [10, 15]
+    num_trees: 10
+

@@ -1,0 +1,21 @@
+###
+# run_mode should be either dev or prod
+run_mode: dev
+
+###
+# when run_mode is dev, run_id can be any string; but to avoid peple use the same run id, the recommended format is yyyyMMdd_[Xth time this code is run on this date]_[user identifier]
+run_id: 20191110_1_pipeline
+
+###
+# whether to run the pipeline on a sample
+use_sample: False
+
+###
+# country filter
+cntry_key_no: [36]
+
+
+# model parameters
+migration_model:
+    model_name: model_type_3m
+

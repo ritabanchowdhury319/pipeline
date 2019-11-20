@@ -1,0 +1,7 @@
+###
+# the first year for read in raw behaviors data
+first_year: 2013
+
+###
+# the last year for read in raw behaviors data
+last_year: 2019
